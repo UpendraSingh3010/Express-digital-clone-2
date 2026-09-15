@@ -1,0 +1,183 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { CheckCircle } from 'lucide-react';
+import ContactFormSection from '../sections/home/ContactFormSection';
+import CaseStudiesSection from '../sections/home/CaseStudiesSection';
+
+export default function EmailMarketingServicesPage() {
+  const paragraphs = [
+  "Agenda of marketing campaigns for each segment will always help in boosting sales and to advertise products and services efficiently to manage new customers",
+  "Email marketing is considered the most fast means of marketing and straight connection with your targeted audience and gives you the best return. It updates your current target audience about your latest offers and news.",
+  "It has been proved that for long lasting profitable relationships the email marketing is the key to success especially for ROI. It is a fact to know that a personalized, segmented and targeted email marketing campaign is crucial for brand awareness.",
+  "We are aware and expertise about the usage of tools strategy, implementation and result tracking in order to gain the best possible brand engagement. Email marketing can be easily taken care by our team which include strategy from template design to tracking and reporting.",
+  "Our task is to create the best strategy for you to attract target audiences and ensure the needs."
+];
+  const counters = [
+  {
+    "num": "30",
+    "label": "Active Email Campaigns"
+  },
+  {
+    "num": "99",
+    "label": "Email Template Design"
+  },
+  {
+    "num": "18",
+    "label": "Email Marketing Clients"
+  },
+  {
+    "num": "14",
+    "label": "Tracking & Reporting Parameters"
+  }
+];
+  const features = [
+  "The Best Email Marketing Strategy",
+  "Email Marketing Campaigns",
+  "Email Template Design",
+  "Tracking & Reporting"
+];
+
+  return (
+    <div className="w-full bg-white">
+      {/* 1. Header Banner */}
+      <section className="bg-[#1b6ba8] text-white py-14">
+        <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
+          <div className="text-xs uppercase tracking-wider text-blue-200 mb-2">
+            <Link to="/" className="hover:underline">Home</Link> &gt; <Link to="/services" className="hover:underline">Services</Link> &gt; <span className="text-white font-medium">Email Marketing</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-light tracking-wide mb-3">
+            Email Marketing
+          </h1>
+          <p className="text-base text-blue-100 max-w-3xl">
+            {paragraphs[0] || 'Comprehensive digital marketing solutions powered by verified empaneled experts.'}
+          </p>
+        </div>
+      </section>
+
+      {/* 2. Main Service Description & Content */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            {/* Left Column: Deep Content */}
+            <div className="lg:col-span-8 space-y-6">
+              <h2 className="text-2xl sm:text-3xl font-light text-gray-800 tracking-tight">
+                About Email Marketing
+              </h2>
+
+              {paragraphs.slice(1).map((p, idx) => (
+                <p key={idx} className="text-base text-gray-600 leading-relaxed">
+                  {p}
+                </p>
+              ))}
+
+              {/* Strategy & Key Highlights */}
+              {features.length > 0 && (
+                <div className="pt-6">
+                  <h3 className="text-lg font-bold text-gray-800 mb-4">
+                    Key Features &amp; Execution Strategy
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {features.map((feat, idx) => (
+                      <div key={idx} className="flex items-start space-x-3 p-4 rounded-lg bg-[#f8fafc] border border-gray-100">
+                        <CheckCircle className="w-5 h-5 text-[#2fa8e0] mt-0.5 flex-shrink-0" />
+                        <span className="text-sm font-medium text-gray-700">{feat}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Right Column: Quick Stats / CTA Box */}
+            <div className="lg:col-span-4 space-y-6">
+              {/* Quick Summary Card */}
+              <div className="bg-[#f0f7fb] p-6 rounded-lg border border-[#2fa8e0]/20 space-y-4">
+                <h3 className="text-lg font-bold text-gray-800 border-b border-gray-200/80 pb-3">
+                  Service Summary
+                </h3>
+                <ul className="text-sm text-gray-600 space-y-3">
+                  <li className="flex items-center justify-between">
+                    <span>Expert Review:</span>
+                    <strong className="text-[#1b6ba8]">Certified Specialists</strong>
+                  </li>
+                  <li className="flex items-center justify-between">
+                    <span>Execution Plan:</span>
+                    <strong className="text-[#1b6ba8]">Included ($250 Value)</strong>
+                  </li>
+                  <li className="flex items-center justify-between">
+                    <span>Reporting:</span>
+                    <strong className="text-[#1b6ba8]">Real-time &amp; Transparent</strong>
+                  </li>
+                  <li className="flex items-center justify-between">
+                    <span>Support:</span>
+                    <strong className="text-[#1b6ba8]">Dedicated Manager</strong>
+                  </li>
+                </ul>
+
+                <div className="pt-2">
+                  <Link
+                    to="/request-a-free-seo-analysis"
+                    className="block w-full text-center bg-[#98c23d] hover:bg-[#85ab32] text-white font-bold text-xs uppercase tracking-wider py-3 rounded shadow transition-colors"
+                  >
+                    Request Free Analysis
+                  </Link>
+                </div>
+              </div>
+
+              {/* Other Services Navigation */}
+              <div className="bg-white p-6 rounded-lg border border-gray-200 space-y-3">
+                <h4 className="text-sm font-bold text-gray-800 uppercase tracking-wider">
+                  Related Services
+                </h4>
+                <div className="space-y-2 text-sm">
+                  <Link to="/search-engine-optimization-services" className="block text-gray-600 hover:text-[#1b6ba8] transition-colors">
+                    → Search Engine Optimization
+                  </Link>
+                  <Link to="/local-seo-services" className="block text-gray-600 hover:text-[#1b6ba8] transition-colors">
+                    → Local SEO Services
+                  </Link>
+                  <Link to="/pay-per-click-management-ppc-services" className="block text-gray-600 hover:text-[#1b6ba8] transition-colors">
+                    → Pay Per Click (PPC) Management
+                  </Link>
+                  <Link to="/social-media-marketing-services" className="block text-gray-600 hover:text-[#1b6ba8] transition-colors">
+                    → Social Media Marketing
+                  </Link>
+                  <Link to="/conversion-rate-optimization-cro-services" className="block text-gray-600 hover:text-[#1b6ba8] transition-colors">
+                    → Conversion Rate Optimization
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Performance Numbers / Metric Counters */}
+      {counters.length > 0 && (
+        <section className="py-14 bg-[#f8fafc] border-b border-gray-200">
+          <div className="max-w-[1240px] mx-auto px-4 sm:px-6">
+            <div className="text-center mb-10">
+              <h3 className="text-2xl font-light text-gray-800 tracking-wide">
+                Key Performance Metrics &amp; Delivery
+              </h3>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+              {counters.map((cnt, idx) => (
+                <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col items-center justify-center">
+                  <span className="text-3xl sm:text-4xl font-extrabold text-[#2fa8e0] mb-2">{cnt.num}</span>
+                  <span className="text-xs text-gray-600 font-medium">{cnt.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 4. Case Studies Section */}
+      <CaseStudiesSection />
+
+      {/* 5. Contact / Lead Inquiry Form */}
+      <ContactFormSection />
+    </div>
+  );
+}
