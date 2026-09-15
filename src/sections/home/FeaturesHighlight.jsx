@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, TrendingUp, PieChart, Check } from 'lucide-react';
 
 export default function FeaturesHighlight() {
   return (
@@ -11,7 +10,9 @@ export default function FeaturesHighlight() {
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-[#f0f7fb] flex items-center justify-center text-[#2fa8e0]">
-                <ShieldCheck className="w-5 h-5" />
+                <div className="dslc-info-box-image-inner">
+                  <span className="dslc-icon dslc-icon-ext-shield text-xl"></span>
+                </div>
               </div>
               <h3 className="text-base font-bold text-gray-800">
                 Online Reputation Management
@@ -25,7 +26,9 @@ export default function FeaturesHighlight() {
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-[#f0f7fb] flex items-center justify-center text-[#2fa8e0]">
-                <TrendingUp className="w-5 h-5" />
+                <div className="dslc-info-box-image-inner">
+                  <span className="dslc-icon dslc-icon-ext-basic_mixer2 text-xl"></span>
+                </div>
               </div>
               <h3 className="text-base font-bold text-gray-800">
                 Conversion Rate Optimization
@@ -39,7 +42,9 @@ export default function FeaturesHighlight() {
           <div className="space-y-3">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-[#f0f7fb] flex items-center justify-center text-[#2fa8e0]">
-                <PieChart className="w-5 h-5" />
+                <div className="dslc-info-box-image-inner">
+                  <span className="dslc-icon dslc-icon-ext-linegraph text-xl"></span>
+                </div>
               </div>
               <h3 className="text-base font-bold text-gray-800">
                 Real-Time Social Media Analytics
@@ -74,27 +79,27 @@ export default function FeaturesHighlight() {
             </div>
 
             <div className="space-y-3 pt-2">
-              <div className="flex items-start space-x-3">
-                <div className="w-5 h-5 rounded-full bg-[#2fa8e0]/10 flex items-center justify-center text-[#2fa8e0] mt-0.5 flex-shrink-0">
-                  <Check className="w-3.5 h-3.5" />
+              <div className="flex items-center space-x-3">
+                <div className="dslc-info-box-image-inner text-[#2fa8e0] flex-shrink-0">
+                  <span className="dslc-icon dslc-icon-ext-profile-male text-lg"></span>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-gray-800">Connect with pre-qualified customers</h4>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <div className="w-5 h-5 rounded-full bg-[#2fa8e0]/10 flex items-center justify-center text-[#2fa8e0] mt-0.5 flex-shrink-0">
-                  <Check className="w-3.5 h-3.5" />
+              <div className="flex items-center space-x-3">
+                <div className="dslc-info-box-image-inner text-[#2fa8e0] flex-shrink-0">
+                  <span className="dslc-icon dslc-icon-ext-clock text-lg"></span>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-gray-800">Save time and money</h4>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <div className="w-5 h-5 rounded-full bg-[#2fa8e0]/10 flex items-center justify-center text-[#2fa8e0] mt-0.5 flex-shrink-0">
-                  <Check className="w-3.5 h-3.5" />
+              <div className="flex items-center space-x-3">
+                <div className="dslc-info-box-image-inner text-[#2fa8e0] flex-shrink-0">
+                  <span className="dslc-icon dslc-icon-ext-clock text-lg"></span>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-gray-800">Rely on an experienced and knowledgeable team</h4>
